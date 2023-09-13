@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Cambridge School & College Dhudial Chakwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1140px)" href="phone-style.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="phone-style-2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo"><img src="images/logo (2).jpg" alt="RCC"></div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#intro">About Us</a></li>
+            <li class="item"><a href="#services-container">Programes</a></li>
+            <li class="item"><a href="#contact">Contact US</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <!-- slider by me -->
+     <div id="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="images/slider-1.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="images/slider-2.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="images/slider-3.jpg" alt="Image 3">
+            </div>
+        </div>    
+        <!-- Navigation buttons -->
+        <div class="slider-nav">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!-- uper he ha -->
+    <div class="text">
+        <h1 class="h-primary">The Royal Cambridge School & College Dhudial</h1>
+        <p class="praagph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam qui. Suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn-1">Apply Now</button>
+    </div>    
+    </section>
+    
+    <section id="intro">
+        <h1 class="h-secondary center">About RCC</h1>
+        <div class='starts'>
+            <img src="images/cheri.jpg" alt="noimge">
+            <p>The head of Royal College sample text on ward adipisicing elit. Repudiandae eaque est nostrum vel fuga beatae nemo odio deleniti obcaecati ullam quibusdam minima sequi sapiente iste nulla nesciunt fuga voluptas deserunt. Ut unde harum voluptate. Perferendis eius, consectetur nemo laboriosam at asperiores architecto corporis quae voluptate veritatis.</p>
+        </div>
+            <button>Read more</button>        
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Programes</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/study-1.png" alt="Catering">
+                <h2 class="h-secondary center">Monthly Tests</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempora vero nesciunt corrupti quidem aperiam qui ut autem exerc.</p>
+            </div>
+            <div class="box">
+                <img src="images/study-3.png" alt="Bulk">
+                <h2 class="h-secondary center">School Section</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempora vero nesciunt corrupti quidem aperiam qui ut autem exerc.</p>
+            </div>
+            <div class="box">
+                <img src="images/study-4.png" alt="Ordering">
+                <h2 class="h-secondary center">Practicles</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi tempora vero nesciunt corrupti quidem aperiam qui ut autem exerc.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter your Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright&copy;Design by shahmeerhsn93@gmail.com |All right reserved
+        </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+</html>

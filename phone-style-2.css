@@ -1,0 +1,35 @@
+
+/* home section */
+
+#slider {
+    /* z-index: -1; */
+    margin-top: -150px;
+}
+#home .text h1{
+    font-size: 20px;
+    margin-top: -5px;
+}
+#home p{
+    font-size: 0.1px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+#home .praagph{
+    /* background-color: brown; */
+    display: none;
+}
+
+
+/* intro section */
+#intro {
+height: 125vh;
+margin-top: -40px;
+}
+
+
+/* utilty classes */
+.btn-1{
+    font-size: 15px;
+    padding: 3px 40px;
+}

@@ -1,0 +1,254 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* navigation bar */
+/* navigation bar: logo and img styling */
+#logo {
+    margin: 10px 34px;
+
+}
+#logo img{
+    height: 67px;
+    margin: 3px 6px;
+    border-radius: 20px;
+}
+/* navigation bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    top: 0px;
+    align-items: center;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    padding:3px 22px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+ #slider {
+    /* z-index: -1; */
+    margin-top: -100px;
+} 
+/* slider-section */
+   #slider .slider-container .slide img {
+           height: 600px;
+           width: 100%;
+        } 
+    #slider .active {
+            background-color: #f2f2f2;
+        } 
+
+/* uper he hai */
+#home .text{
+    margin-top: -500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 513px;
+    padding: 3px 200px;
+    justify-content: center;
+}
+/* #home::before{
+    content:"";
+    background: url('images/background 2.jpg')no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.89;
+    height: 600px;
+    width: 100%;
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    
+}    */
+#home .text h1{
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home .text p{
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* intro section by me */
+#intro{
+    background-color: rgb(221, 91, 239);
+    height: 80vh;
+    width: auto;
+}
+#intro h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3rem;
+    /* padding: 12px; */
+}
+.starts{
+    display: flex;
+}
+.starts p{
+    /* color: white; */
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 40% ;
+    margin-left: 50px;
+    margin-top: 25px;
+    /* padding: 50px; */
+    
+    
+}
+.starts img{
+    height: 370px;
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 95px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+#intro button{
+    height:35px;
+    margin: 20px auto;
+    display: block;
+    width:135px;
+    background-color:black;
+    border:0px solid ;
+    border-radius:20px;
+    color:white;
+
+}
+
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    /* border: 2px solid red; */
+    border-radius: 23px;
+    background: rgb(246, 205, 205);
+    padding: 34px;
+    margin: 3px 35px;
+}
+#services .box img{
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: '';
+    height: 100%;/* real 100% */
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+    position: absolute;
+    /* top: -10%;by me */
+    background: url('images/sport-1.png') no-repeat center center/cover;
+    /* background-color: blue; */
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+
+
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn-1{
+    color: white;
+    background-color:  rgb(221, 91, 239);
+    padding: 6px 20px;
+    margin: 17px;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
